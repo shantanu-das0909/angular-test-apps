@@ -30,10 +30,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
+    font-size: 1rem;
+
     /* border-bottom:  1px solid white; */
 }
 
-.buttons > button {
+
+.buttons > a {
     outline: none;
     border: none;
     cursor: pointer;
@@ -42,7 +45,10 @@
     border-radius: 5em;
     background-color: #E4E6EB;
     color: black;
+    text-decoration: none;
+    outline: none;
 }
+
 
 .apps {
     height: 65vh;
@@ -53,4 +59,6 @@
     border-radius: 10px;
 
     position: relative;
+    font-size: 1.1rem;
 }
+

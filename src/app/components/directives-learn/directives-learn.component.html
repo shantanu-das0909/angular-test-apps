@@ -1,0 +1,9 @@
+<div class="card-container">
+  <div class="card" *ngFor="let user of users" appHoverDirective>
+    <h3 class="card-title">{{user}}</h3>
+    <p class="card-text" [style.display]="'none'">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+      pariatur?
+    </p>
+  </div>
+</div>
