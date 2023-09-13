@@ -1,0 +1,28 @@
+<div class="search-input">
+  <input
+    type="text"
+    placeholder="Search by product name"
+    id="searchBar"
+    name="searchBar"
+    class="search-bar"
+    autocomplete="off"
+    #productSearchInput
+    (focus)="onFocus(productSearchInput.value)"
+    (blur)="onBlur()"
+  />
+</div>
+
+<div class="serach-card" [hidden]="!showProducts">
+  <div class="filtered-products">
+    <div
+      class="search-result"
+      *ngFor="let product of filteredProducts"
+      tappable
+      (click) = "setProductName(product)"
+    >
+      {{ product }}
+    </div>
+  </div>
+  <div class="filtered-products" *ngIf="filteredProducts && filteredProducts.length <= 0 && !isSearching">No Products found</div>
+  <div class="filtered-products" [hidden]="!isSearching">Searching products...</div>
+</div>
