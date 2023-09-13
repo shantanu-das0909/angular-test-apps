@@ -33,7 +33,7 @@ export class SearchBarComponent implements OnInit {
       'mangoes',
       'shoes',
       'furnitures',
-      'headphone set'
+      'headphone set',
     ];
   }
 
@@ -86,5 +86,4 @@ export class SearchBarComponent implements OnInit {
       this.showProducts = false;
     }, 100);
   }
-
 }

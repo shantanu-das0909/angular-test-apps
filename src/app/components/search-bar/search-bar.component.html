@@ -18,11 +18,18 @@
       class="search-result"
       *ngFor="let product of filteredProducts"
       tappable
-      (click) = "setProductName(product)"
+      (click)="setProductName(product)"
     >
       {{ product }}
     </div>
   </div>
-  <div class="filtered-products" *ngIf="filteredProducts && filteredProducts.length <= 0 && !isSearching">No Products found</div>
-  <div class="filtered-products" [hidden]="!isSearching">Searching products...</div>
+  <div
+    class="filtered-products"
+    *ngIf="filteredProducts && filteredProducts.length <= 0 && !isSearching"
+  >
+    No Products found
+  </div>
+  <div class="filtered-products" [hidden]="!isSearching">
+    Searching products...
+  </div>
 </div>

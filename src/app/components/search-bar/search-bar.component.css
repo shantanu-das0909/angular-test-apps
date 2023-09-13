@@ -1,50 +1,49 @@
 * {
-    font-size: 62.5%;
-    --serach-bar-width: 20rem;
-    --serach-bar-height: 2rem;
+  font-size: 62.5%;
+  --serach-bar-width: 20rem;
+  --serach-bar-height: 2rem;
 }
 .search-bar {
-    width: var(--serach-bar-width);
-    height: var(--serach-bar-height);
-    padding: 0.2rem 1rem;
-    font-size: 1.7em;
-    position: absolute;
-    top: 5rem;
-    left: 50%;
-    translate: -50%;
+  width: var(--serach-bar-width);
+  height: var(--serach-bar-height);
+  padding: 0.2rem 1rem;
+  font-size: 1.7em;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  translate: -50%;
 }
 
-.search-bar:focus, .search-bar:active {
-    outline: none;
+.search-bar:focus,
+.search-bar:active {
+  outline: none;
 }
-
 
 .serach-card {
-    background: whitesmoke;
-    color: black;
-    width: var(--serach-bar-width);
-    position: absolute;
-    top: calc(var(--serach-bar-height) + 5rem);
-    left: 50%;
-    translate: -50%;
+  background: whitesmoke;
+  color: black;
+  width: var(--serach-bar-width);
+  position: absolute;
+  top: calc(var(--serach-bar-height) + 5rem);
+  left: 50%;
+  translate: -50%;
 }
 
 .filtered-products {
-    font-size: 2.7em;
+  font-size: 2.7em;
 }
 
-.filtered-products:nth-child(2), .filtered-products:nth-child(3) {
-    font-size: 1.7em;
-    padding: 0.2rem 1rem;
-
+.filtered-products:nth-child(2),
+.filtered-products:nth-child(3) {
+  font-size: 1.7em;
+  padding: 0.2rem 1rem;
 }
 
 .search-result {
-    cursor: pointer;
-    padding: 0.2rem 1rem;
-
+  cursor: pointer;
+  padding: 0.2rem 1rem;
 }
 
 .search-result:hover {
-    background-color: white;
+  background-color: white;
 }
